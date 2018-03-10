@@ -1,0 +1,179 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background: rgba(241,237,238,1);
+    margin-top: -5px;
+}
+ul li{
+    list-style: none;
+}
+.header{
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    margin-top: 10px;
+}
+.enable{
+    display: none;
+    margin-left: 20px;
+    margin-top: -33px;
+}
+.enable img{
+    width: 20px;
+    height: 15px;
+}
+.respond{
+    display: none;
+}
+.list:hover{
+    background: white;
+}
+.list:hover .menu{
+    color:#c60001 ;
+    text-decoration: none;
+}
+.system{
+    background: #c60001;
+    float: left;
+    width: 18.75%;
+    height: 40px;
+}
+.system img{
+    width: 50%;
+    height: 30px;
+    margin-top: 5px;
+}
+.list {
+    background:#c60001 ;
+    width: 8.05%;
+    height: 40px;
+    line-height:40px;
+    float: left;
+}
+.menu{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+nav li ul.sub-menu{
+    padding-left: 0;
+    width: 100%;
+    background:rgba(198,0,1,0.7);
+    display: none;
+    z-index:9999;
+    position: relative;
+}
+.sub-menu a{
+    margin: 0 auto;
+    color:white;
+    text-decoration: none;
+}
+.sub-menu li:hover{
+    background: #c60001;
+}
+.sub-menu li{
+    height: 45px;
+    line-height: 45px;
+}
+.sub-menu a{
+    font-size: 12px;
+}
+.land{
+    background: #c60001;
+    height: 40px;
+    line-height: 40px;
+}
+.land a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.foot{
+    height:90px;
+    background: rgba(137,12,12,1);
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    line-height: 90px;
+}
+.foot p{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight:800;
+    margin-bottom: 0;
+}
+.child-list{
+    display: none;
+}
+@media screen and (max-width: 1220px){
+  .list{
+     display: none;
+  }
+  .land{
+     width: 20%;
+      float: right;
+  }
+  .system{
+      width: 80%;
+  }
+  .system img{
+      width: 15%;
+      margin-left: 200px;
+  }
+  .enable{
+     display: block;
+      float: left;
+  }
+  .respond{
+      display: block;
+  }
+    .child-list{
+        display: none;
+        position: absolute;
+        width: 600px;
+    }
+    .child-list p{
+        width: 100%;
+        height: 30px;
+        background:#A90E0C;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(117,57,56,0.5);
+    }
+    .child-list  a{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+    .child-list ul{
+         display: none;
+        background: #800402;
+        margin-bottom:0;
+        margin-top: 0;
+    }
+  }
+@media screen and (max-width: 900px) {
+    .system img{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .system img{
+        width: 25%;
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .system img{
+        width: 25%;
+        margin-left: 100px;
+    }
+}
