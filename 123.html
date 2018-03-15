@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <style type="text/css">
+        .container{
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            margin: 50px auto;
+            position: relative;
+        }
+        .list{
+            width: 2500px;
+            height: 400px;
+            position: absolute;
+            left: 0px;
+        }
+        .list img{
+            float: left;
+            height: 400px;
+            width: 500px;
+        }
+        .buttons{
+            position: absolute;
+            width: 75px;
+            height: 20px;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -38px;
+            z-index: 2;
+        }
+        .buttons span{
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: gray;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .buttons .on{
+            background-color: rgb(255,50,50);
+            opacity: 0.8;
+        }
+        .arrow{
+            position: absolute;
+            background-color: gray;
+            opacity: 0.5;
+            height: 40px;
+            width: 40px;
+            color: #fff;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+        }
+        #prev{
+            top:50%;
+            left: 10px;
+            margin-top:-20px;
+        }
+        #next{
+            top:50%;
+            right: 10px;
+            margin-top:-20px;
+        }
+    </style>
+</head>
+<body>
+<div id="container" class="container">
+    <div id="list" class="list">
+        <img src="img3/首页1.jpg">
+        <img src="img3/首页2.jpg">
+        <img src="img3/首页1.jpg">
+        <img src="img3/首页2.jpg">
+        <img src="img3/首页1.jpg">
+    </div>
+    <div id="buttons" class="buttons">
+        <span index="0" class="on"></span><!--
+      --><span index="1"></span><!--
+      --><span index="2"></span><!--
+      --><span index="3"></span><!--
+      --><span index="4"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+<script type="text/javascript">
+    window.onload = function(){
+        var container = document.getElementById('container');
+        var list = document.getElementById('list');
+        var buttons = document.getElementById('buttons');
+        var buttonsItem = buttons.getElementsByTagName('span');
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var index = 0;
+        var startX = 0;
+        var endX = 0;
+
+
+        container.addEventListener('touchend',function(event){
+            if(event.changedTouches.length==1&&this.getAttribute('disabled')!='disabled'){
+                var touch = event.changedTouches[0];
+                endX = touch.pageX;
+                var offset = endX-startX;
+                console.log(offset);
+                if(Math.abs(offset)>=50){
+                    if(offset<0){// 右滑
+                        nextMethod();
+                    }else{
+                        prevMethod();
+                    }
+                }
+            }
+        });
+
+        container.addEventListener('touchmove',function(){
+            event.preventDefault();
+        })
+
+        container.addEventListener('touchstart',function(event){
+            if(event.targetTouches.length==1&&this.getAttribute('disabled')!='disabled'){
+                var touch = event.targetTouches[0];
+                startX = touch.pageX;
+            }
+        })
+
+        prev.addEventListener('click',function(){
+            if (this.getAttribute('disabled')=='disabled') {
+                return false;
+            }
+            prevMethod();
+        });
+
+        next.addEventListener('click',function(){
+            if (this.getAttribute('disabled')=='disabled') {
+                return false;
+            }
+            nextMethod();
+        });
+
+        for(var i=0;i<buttonsItem.length;i++){
+            buttonsItem[i].onclick = function(){
+                if (this.getAttribute('disabled')=='disabled') {
+                    return false;
+                }
+                var i = this.getAttribute('index');
+                var length = Math.abs((i-index)*500);
+                var direction = 'right';
+                if (length<0) {
+                    direction = 'left';
+                }
+                index = i;
+                document.getElementsByClassName('on')[0].setAttribute('class','');
+                buttonsItem[index].className = 'on';
+                animate(direction,1,length);
+            }
+        }
+
+        function prevMethod(){
+            if(index==0){
+                index = 4;
+                animate('right',40,2000);
+            }else{
+                index--;
+                animate('left',1,500);
+            }
+            document.getElementsByClassName('on')[0].setAttribute('class','');
+            // buttonsItem[index].setAttribute('class','on');
+            buttonsItem[index].className = 'on';
+        }
+
+        function nextMethod(){
+            if(index==4){
+                index = 0;
+                animate('left',40,2000);
+            }else{
+                index++;
+                animate('right',1,500);
+            }
+            document.getElementsByClassName('on')[0].setAttribute('class','');
+            buttonsItem[index].className = 'on';
+        }
+
+        function animate(direction,speed,length){
+            var end = length/speed;
+            var count = 0;
+            for(var i=0;i<end;i++){
+                setTimeout(function(){
+                    count++;
+                    var left = list.offsetLeft;
+                    if (direction=='right') {
+                        left -= speed;
+                    }else{
+                        left += speed;
+                    }
+                    list.style.left = left+'px';
+                    if(count<end-1){
+                        disabledButtons();
+                    }else{
+                        resumeButtons();
+                    }
+                },speed*i);
+            }
+        }
+
+        function disabledButtons(){
+            for(var i=0;i<5;i++){
+                buttonsItem[i].setAttribute('disabled','disabled');
+            }
+            prev.setAttribute('disabled','disabled');
+            next.setAttribute('disabled','disabled');
+            container.setAttribute('disabled','disabled');
+        }
+
+        function resumeButtons(){
+            for(var i=0;i<5;i++){
+                buttonsItem[i].removeAttribute('disabled');
+            }
+            prev.removeAttribute('disabled');
+            next.removeAttribute('disabled');
+            container.removeAttribute('disabled');
+        }
+    }
+</script>
+</body>
+</html>

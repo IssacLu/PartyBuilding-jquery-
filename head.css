@@ -1,8 +1,8 @@
 html,body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background: rgba(241,237,238,1);
-    margin-top: -5px;
+    margin-top: -7px;
 }
 ul li{
     list-style: none;
@@ -27,6 +27,7 @@ ul li{
 }
 .respond{
     display: none;
+
 }
 .list:hover{
     background: white;
@@ -132,11 +133,12 @@ nav li ul.sub-menu{
   }
   .respond{
       display: block;
+
   }
     .child-list{
         display: none;
         position: absolute;
-        width: 600px;
+        width: 150px;
     }
     .child-list p{
         width: 100%;
@@ -169,6 +171,9 @@ nav li ul.sub-menu{
     .system img{
         width: 25%;
         margin-left: 150px;
+    }
+    .child-list a{
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 450px) {

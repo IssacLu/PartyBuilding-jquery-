@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -306,75 +306,27 @@
     }
 </style>
 <style>
-    * {
-        margin:0;
-        padding:0;
-    }
-    a{
-        text-decoration: none;
-    }
-    .container {
-        position: relative;
-        width: 100%;
-        height: 290px;
-
-        overflow: hidden;
-    }
-    .container .wrap {
-        position: absolute;
-        width: 4200px;
-        height: 400px;
-        z-index: 1;
-    }
-    .container .wrap img {
-        float: left;
-
-        height: 290px;
-    }
-    .container .buttons {
-        position: relative;
-        width: 150px;
-        height: 10px;
-        z-index: 2;
-        margin: 0 auto;
-        top: 265px;
-    }
-    .container .buttons span {
-        margin-left: 5px;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        text-align: center;
-        color:white;
+    .prev,.next{
         cursor: pointer;
-    }
-    .container .buttons span.on{
-        background-color: red;
-    }
-    .container .arrow {
         position: absolute;
         top: 35%;
         color: white;
-        padding:0 14px;
+        padding: 0 14px;
         border-radius: 50%;
         font-size: 50px;
         z-index: 2;
+    }
+    .showpic{
         display: none;
     }
-    .container .arrow_left {
-        left: 10px;
+    .wrap{
+        width: 100%;
+        height: 290px;
+        margin:  0 auto;
     }
-    .container .arrow_right {
-        right: 10px;
-    }
-    .container:hover .arrow {
-        display: block;
-        text-decoration: none;
-    }
-    .container .arrow:hover {
-        background-color: rgba(0,0,0,0.2);
+    .wrap div img{
+        width: 100%;
+        height: 290px;
     }
 </style>
 <body>
@@ -522,28 +474,14 @@
     </div>
 </div>
 <div class="picture" >
-    <div class="container">
-        <div class="wrap" style="left: -600px;">
-            <img src="img3/首页1.jpg" alt="">
-            <img src="img3/首页2.jpg" alt="">
-            <img src="img3/首页1.jpg" alt="">
-            <img src="img3/首页2.jpg" alt="">
-            <img src="img3/首页1.jpg" alt="">
-            <img src="img3/首页2.jpg" alt="">
-            <img src="img3/首页1.jpg" alt="">
-        </div>
-        <div class="buttons">
-            <span class="on"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" class="arrow arrow_left"><</a>
-        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" class="arrow arrow_right">></a>
-       <!-- <p class="text">党建系统新版回归</p>-->
+    <div class="wrap" id="wrap">
+        <div class="showpic" style="display: block"><img src="img3/首页1.jpg"></div>
+        <div class="showpic"><img src="img3/首页1.jpg"></div>
+        <div class="showpic"><img src="img3/首页2.jpg"></div>
+        <div class="showpic"><img src="img3/首页1.jpg"></div>
+        <div class="showpic"><img src="img3/首页2.jpg"></div>
+        <div class="showpic"><img src="img3/首页1.jpg"></div>
     </div>
-
   </div>
 <p class="text">党建系统新版回归</p>
 <div class="module">
