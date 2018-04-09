@@ -12,329 +12,18 @@
   <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <title>党建</title>
     <link rel="stylesheet" href="head.css" type="text/css" />
+    <link rel="stylesheet" href="homePage.css" type="text/css" />
     <script src="jquery-3.2.1.js"></script>
     <script src="head.js"></script>
     <script src="child-list.js"></script>
     <script src="show.js"></script>
     <script src="banner.js"></script>
 </head>
-<style>
-
-   li{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .picture{
-    width: 62.5%;
-    height: 290px;
-    margin:0 auto;
-  }
-  .text{
-    width: 62.5%;
-    height: 30px;
-    background: rgba(0,0,0,0.35);
-    color: rgba(255,255,255,0.7);
-    text-align: center;
-    padding-top: 5px;
-      margin: 0 auto;
-  }
-  .land a{
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .item1{
-    height: 140px;
-    width: 62.5%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .module span{
-    color: black;
-    font-size:11px;
-
-  }
-  .module p{
-    color: rgba(215,0,0,1);
-    font-size: 11px;
-    text-align: left;
-    margin-top: 8px;
-    margin-bottom: 4px;
-  }
-  .item1-img{
-    width: 15px;
-    height: 15px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 8px;
-    margin-right: 10px;
-  }
-  .state{
-    width:36% ;
-    height: 140px;
-    float: left;
-    background: rgba(252,250,251,1);
-    text-align: center;
-  }
-  .notice{
-    width: 62%;
-    height: 140px;
-    float: right;
-    background: rgba(252,250,251,1);
-  }
-  .notice li span{
-      margin-left: 30px;
-  }
-  .btn{
-    color: rgba(252,250,251,1);
-    background: rgba(215,0,0,1);
-    width: 30%;
-    height: 30px;
-    margin-top: 25px;
-    border: none;
-  }
-
-  hr{
-    border-top: 1px solid pink;
-    width: 70%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-      margin-left: 30px;
-  }
-  .news{
-    margin-right: 40px;
-    margin-left: 50px;
-  }
-  .special{
-    width: 49%;
-    height: 140px;
-    background: rgba(252,250,251,1);
-    float: left;
-  }
-   .special1{
-       width: 49%;
-       height: 140px;
-       background: rgba(252,250,251,1);
-       float: right;
-   }
-  .item-pic{
-    width:45%;
-    height:105px;
-    position: relative;
-    float: left;
-    margin-left: 20px;
-      margin-right: 10px;
-  }
-  .item4{
-    width: 62.5%;
-    height: 112px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .item2-pic {
-    width: 24%;
-    height: 112px;
-    position: relative;
-    float: left;
-  }
-   .item2-pic1 {
-       width: 24%;
-       height: 112px;
-       position: relative;
-       float: left;
-   }
-  .model{
-      width: 49%;
-      height: 112px;
-      position:relative;
-      background: rgba(252,250,251,1);
-      float: left;
-      margin-left: 16px;
-      margin-right: 17px;
-    }
-  .item5{
-    width: 62.5%;
-    height: 140px;
-    background: rgba(252,250,251,1);
-    margin: 0 auto;
-    margin-top: 20px;
-    position: relative;
-  }
- .index{
-     font-size: 12px;
- }
- .index span{
-     color: gray;
- }
- .str{
-     width: 30%;
-     height:70px;
-     float: left;
-     margin-right: 10px;
-     margin-left: 20px;
- }
- .end{
-     width: 15%;
-     height: 92px;
-     float: left;
-     margin-left: 35px;
- }
- .end img{
-     width: 100%;
-     height:60px;
- }
- .end p{
-     color: gray;
- }
-   @media screen and (max-width:1800px){
-     .item2-pic{
-         width: 23.5%;
-     }
-     .item2-pic1{
-         width: 23.5%;
-     }
- }
-   @media screen and (max-width:1400px){
-       .notice li,.special li, .special1 li ,.model li{
-           overflow: hidden;
-           text-overflow: ellipsis;
-           white-space: nowrap;
-       }
-       .item2-pic{
-           width: 23%;
-       }
-       .item2-pic1{
-           width: 24%;
-       }
-
-   }
-   @media screen and (max-width:1350px){
-       .item2-pic{
-           width: 23%;
-       }
-       .item2-pic1{
-           width: 24%;
-       }
-       .model{
-           margin-right: 15px;
-           margin-left: 15px;
-       }
-   }
-   @media screen and (max-width:1300px){
-       .index span{
-           overflow: hidden;
-           text-overflow: ellipsis;
-           white-space: nowrap;
-       }
-       .end p{
-           overflow: hidden;
-           text-overflow: ellipsis;
-           white-space: nowrap;
-       }
-       .end{
-           width: 13.5%;
-       }
-   }
-   @media screen and (max-width:1210px){
-       .item2-pic{
-           width: 23%;
-       }
-       .item2-pic1{
-           width: 23%;
-       }
-       .model{
-           margin-right: 13px;
-           margin-left: 13px;
-       }
-   }
-   @media screen and (max-width:860px){
-       .model{
-           margin-right: 12px;
-           margin-left: 12px;
-       }
-   }
-   @media screen and (max-width: 840px){
-        .state{
-            float: none;
-            width: 100%;
-        }
-        .notice{
-            float: none;
-            width: 100%;
-            margin-top: 10px;
-        }
-        .special{
-            float: none;
-            width: 100%;
-            margin-top: 160px;
-        }
-        .special1{
-            float: none;
-            width: 100%;
-        }
-        .module p{
-            padding-top: 8px;
-        }
-        .item4{
-            margin-top: 160px;
-        }
-        .item4 p{
-            padding-top: 0;
-        }
-        .item2-pic{
-            float: left;
-            width: 48%;
-        }
-        .item2-pic1{
-            float: right;
-            width: 48%;
-            margin-top: -255px;
-        }
-        .model{
-            width: 100%;
-            margin: 15px auto;
-        }
-        .item5{
-            margin-top: 145px;
-        }
-    }
-   @media screen and (max-width:900px){
-        .item5{
-            height: 230px;
-        }
-    }
-</style>
-<style>
-    .prev,.next{
-        cursor: pointer;
-        position: absolute;
-        top: 35%;
-        color: white;
-        padding: 0 14px;
-        border-radius: 50%;
-        font-size: 50px;
-        z-index: 2;
-    }
-    .showpic{
-        display: none;
-    }
-    .wrap{
-        width: 100%;
-        height: 290px;
-        margin:  0 auto;
-    }
-    .wrap div img{
-        width: 100%;
-        height: 290px;
-    }
-</style>
 <body>
 <div class="header">
     <div class="system">
-        <img  src="img3/党建logo.png"/>
+        <img  src="img3/partyBuilding.png"/>
     </div>
-
     <nav>
         <ul>
             <li class="list">
@@ -401,14 +90,14 @@
         </ul>
     </nav>
     <div class="land">
-        <img src="img3/登陆.png" style="width: 17px; height: 17px"/>
+        <img src="img3/land.png" class="landImg"/>
         <a href="">登录</a>
     </div>
 </div>
 <div class="respond">
     <div>
         <a href="#" class="enable">
-            <img src="img3/菜单图标.png" />
+            <img src="img3/menu.png" />
         </a>
     </div>
     <div class="child-list">
@@ -475,54 +164,56 @@
 </div>
 <div class="picture" >
     <div class="wrap" id="wrap">
-        <div class="showpic" style="display: block"><img src="img3/首页1.jpg"></div>
-        <div class="showpic"><img src="img3/首页1.jpg"></div>
-        <div class="showpic"><img src="img3/首页2.jpg"></div>
-        <div class="showpic"><img src="img3/首页1.jpg"></div>
-        <div class="showpic"><img src="img3/首页2.jpg"></div>
-        <div class="showpic"><img src="img3/首页1.jpg"></div>
+        <div class="showpic" style="display: block">
+            <img src="img3/homePage1.jpg">
+        </div>
+        <div class="showpic"><img src="img3/homePage1.jpg"></div>
+        <div class="showpic"><img src="img3/homePage2.jpg"></div>
+        <div class="showpic"><img src="img3/homePage1.jpg"></div>
+        <div class="showpic"><img src="img3/homePage2.jpg"></div>
+        <div class="showpic"><img src="img3/homePage1.jpg"></div>
     </div>
   </div>
 <p class="text">党建系统新版回归</p>
 <div class="module">
     <div class="item1">
       <div class="state">
-        <img src="img3/用户.png" class="item1-img"/>
+        <img src="img3/user.png" class="item1-img"/>
         <p>个人状态</p>
         <span>登陆查看个人状态</span>
           <br/>
         <input type="button" value="登录"  class="btn"/>
       </div>
       <div class="notice">
-        <img src="img3/通知.png" class="item1-img"/>
+        <img src="img3/notice.png" class="item1-img"/>
         <p>最新通知</p>
         <li>
-          <span class="news">第五十三期入党申请人培训结业考试成绩查询通知</span>
-          <span class="date">2017-05-21 22:27:09</span>
+          <span class="news">第五十三期</span>
+          <span class="date1">2017-05-21 22:27:09</span>
+        </li>
+        <hr/>
+        <li>
+          <span class="news">第五十三期入党申请人培训结业</span>
+          <span class="date2">2017-05-21 22:27:09</span>
         </li>
         <hr/>
         <li>
           <span class="news">第五十三期入党申请人培训结业考试成绩查询通知</span>
-          <span class="date">2017-05-21 22:27:09</span>
+          <span>2017-05-21 22:27:09</span>
         </li>
         <hr/>
         <li>
           <span class="news">第五十三期入党申请人培训结业考试成绩查询通知</span>
-          <span class="date">2017-05-21 22:27:09</span>
-        </li>
-        <hr/>
-        <li>
-          <span class="news">第五十三期入党申请人培训结业考试成绩查询通知</span>
-          <span class="date">2017-05-21 22:27:09</span>
+          <span>2017-05-21 22:27:09</span>
         </li>
         <hr/>
       </div>
     </div>
     <div class="item1">
       <div class="special">
-        <img src="img3/通知.png" class="item1-img"/>
+        <img src="img3/notice.png" class="item1-img"/>
         <p>党建专项</p>
-        <img class="item-pic" src="img3/党建专项.jpg"/>
+        <img class="item-pic" src="img3/partySpecial.jpg"/>
           <ul class="index">
               <li><span>习近平:要是暴力恐怖分子成为...</span></li>
               <li><span>习近平致青年</span></li>
@@ -533,9 +224,9 @@
           </ul>
       </div>
       <div class="special1">
-        <img src="img3/通知.png" class="item1-img"/>
+        <img src="img3/notice.png" class="item1-img"/>
         <p>支部分采</p>
-        <img class="item-pic" src="img3/支部风采.jpg"/>
+        <img class="item-pic" src="img3/branchMining%20%20.jpg"/>
           <ul class="index">
               <li><span>习近平:要是暴力恐怖分子成为...</span></li>
               <li><span>习近平致青年</span></li>
@@ -547,11 +238,11 @@
       </div>
     </div>
     <div class="item4">
-        <img src="img3/网上党课.png" class="item2-pic"  />
+        <img src="img3/onlineLectures.png" class="item2-pic"  />
       <div class="model">
-        <img src="img3/通知.png" class="item1-img" />
+        <img src="img3/notice.png" class="item1-img" />
         <p>榜样力量</p>
-        <img  class="str" src="img3/支部力量.jpg"/>
+        <img  class="str" src="img3/branchPower%20.jpg"/>
           <ul class="index">
               <li><span>习近平:要是暴力恐怖分子成为要更多这样的...</span></li>
               <li><span>习近平致青年要更多这样的好干部</span></li>
@@ -560,30 +251,30 @@
           </ul>
       </div>
         <a href="TheoryStudy.html">
-        <img src="img3/理论学习.png" class="item2-pic1" />
+        <img src="img3/theory.png" class="item2-pic1" />
         </a>
     </div>
     <div class="item5">
-      <img src="img3/通知.png" class="item1-img"/>
-      <p style="padding-top: 8px">党校培训</p>
+      <img src="img3/notice.png" class="item1-img"/>
+      <p class="train">党校培训</p>
         <div class="end">
-            <img src="img3/党校培训.jpg"/>
+            <img src="img3/partyTrain.jpg"/>
             <p>习近平在北京大学师生座谈会上要更多这样的</p>
         </div>
         <div class="end">
-            <img src="img3/党校培训.jpg"/>
+            <img src="img3/partyTrain.jpg"/>
             <p>习近平在北京大学师生座谈会上要更多这样的</p>
         </div>
         <div class="end">
-            <img src="img3/党校培训2.jpg"/>
+            <img src="img3/partyTrain2.jpg"/>
             <p>习近平在北京大学师生座谈会上要更多这样的</p>
         </div>
         <div class="end">
-            <img src="img3/党校培训3.jpg"/>
+            <img src="img3/partyTrain3.jpg"/>
             <p>习近平在北京大学师生座谈会上要更多这样的</p>
         </div>
         <div class="end">
-            <img src="img3/党校培训4.jpg"/>
+            <img src="img3/partyTrain4.jpg"/>
             <p>习近平在北京大学师生座谈会上要更多这样的</p>
         </div>
     </div>

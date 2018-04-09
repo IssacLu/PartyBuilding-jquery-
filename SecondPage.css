@@ -1,7 +1,6 @@
 body{
     background: rgba(241,237,238,1);
     font-size: 14px;
-    margin-top: -9px;
 }
 .find{
     background: rgba(252,250,251,1);
@@ -92,7 +91,7 @@ a{
         overflow: hidden;
     }
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1050px){
     .find{
         display: none;
     }
@@ -106,5 +105,15 @@ a{
     }
     .enable{
         margin-top: -28px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .respond {
+        display: block;
+        position: absolute;
+        top: 40px;
+    }
+    .total{
+        width: 70%;
     }
 }

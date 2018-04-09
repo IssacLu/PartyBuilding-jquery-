@@ -5,49 +5,20 @@
     <title>Title</title>
     <link rel="stylesheet" href="head.css" type="text/css">
     <link rel="stylesheet" href="SecondPage.css" type="text/css">
+    <link rel="stylesheet" href="nav.css" type="text/css">
+    <link rel="stylesheet" href="memberList.css" type="text/css">
     <script src="jquery-3.2.1.js"></script>
     <script src="head.js"></script>
     <script src="nav.js"></script>
     <script src="child-list.js"></script>
     <script src="show.js"></script>
+    <script src="memberList.js"></script>
 </head>
-<style>
-    table{
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    table tr{
-        height: 30px;
-    }
-    table th{
-        background: #c60001;
-        color: white;
-    }
-    .odd{
-        background:#ebebeb;
-    }
-    .even{
-        background:#f1f1f1;
-    }
-    .nav1{
-        background: #e9a9a7;
-    }
-    .nav1 a{
-        color: white;
-    }
-    @media screen and (max-width:660px){
-           .foot{
-               margin-top: 180px;
-           }
-    }
-</style>
 <body>
 <div class="header">
     <div class="system">
-        <img  src="img3/党建logo.png"/>
+        <img  src="img3/partyBuilding.png"/>
     </div>
-
     <nav>
         <ul>
             <li class="list">
@@ -66,8 +37,8 @@
                     <li><a href="detial.html">支部详情</a></li>
                     <li><a href="member-list.html">支部成员列表</a></li>
                     <li><a href="#">我的学习小组</a></li>
-                    <li><a href="#">上传文献查看</a></li>
-                    <li><a href="#">我的消息</a></li>
+                    <li><a href="PartyMembershipApplication.html">上传文献查看</a></li>
+                    <li><a href="MyNews.html">我的消息</a></li>
                     <li><a href="#">我的申诉</a></li>
                 </ul>
             </li>
@@ -114,7 +85,7 @@
         </ul>
     </nav>
     <div class="land">
-        <img src="img3/登陆.png" style="width: 17px; height: 17px"/>
+        <img src="img3/land.png" class="landImg"/>
         <a href="">登录</a>
     </div>
 </div>
@@ -295,7 +266,7 @@
 <div class="respond">
     <div>
         <a href="#" class="enable">
-            <img src="img3/菜单图标.png" />
+            <img src="img3/menu.png" />
         </a>
     </div>
     <div class="child-list">
@@ -313,8 +284,8 @@
             <li><a href="detial.html">支部详情</a></li>
             <li><a href="member-list.html">支部成员列表</a></li>
             <li><a href="#">我的学习小组</a></li>
-            <li><a href="#">上传文献查看</a></li>
-            <li><a href="#">我的消息</a></li>
+            <li><a href="PartyMembershipApplication.html">上传文献查看</a></li>
+            <li><a href="MyNews.html">我的消息</a></li>
             <li><a href="#">我的申诉</a></li>
         </ul>
 
@@ -363,11 +334,5 @@
 <div class="foot">
     <p>Copyright © 2013 TWT Studio.All rights reserved</p>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $('tr').addClass('odd');
-        $('tr:even').addClass('even');
-        });
-</script>
 </body>
 </html>

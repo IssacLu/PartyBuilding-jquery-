@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 【重要】设定网页的编码 -->
     <meta charset="UTF-8">
+    <!-- 搜索引擎用：页面介绍 -->
+    <meta name="description" content="天津大学天外天网站是 ……">
+    <!-- 搜索引擎用：页面关键词 -->
+    <meta name="keywords" content="天外天,twt,……">
+    <!-- 【重要】设定移动端缩放，此处 value 为禁止缩放（模仿原生效果，比较常用） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 【重要】要求 IE 浏览器使用最新版本渲染引擎渲染（安装 chrome framework 时使用 webkit 内核）-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!-- 【重要】要求360浏览器使用极速模式（webkit 内核）渲染 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止百度对页面进行转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 设置 chrome mobile 顶端地址栏颜色 -->
+    <meta name="theme-color" content="#dddedf">
+    <!-- 针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Title</title>
     <link rel="stylesheet" href="head.css" type="text/css">
     <link rel="stylesheet" href="SecondPage.css" type="text/css">
@@ -229,7 +247,7 @@
     }
     @media screen and (max-width: 1250px){
         .total1{
-            width: 950px;
+            width: 1120px;
         }
         .Own4imgR{
             left: 923px;
@@ -244,7 +262,7 @@
 <body>
 <div class="header">
     <div class="system">
-        <img  src="img3/党建logo.png"/>
+        <img  src="img3/partyBuilding.png"/>
     </div>
 
     <nav>
@@ -313,12 +331,12 @@
         </ul>
     </nav>
     <div class="land">
-        <img src="img3/登陆.png" style="width: 17px; height: 17px"/>
+        <img src="img3/land.png" class="landImg"/>
         <a href="">登录</a>
     </div>
 </div>
 <div class="total1">
-     <nav class="find" style="width: 150px">
+     <nav class="find">
         <div class="active">我的支部</div>
         <div class="btn">
             <p class="nav1"><a href="#">个人状态</a></p>
@@ -337,69 +355,69 @@
             <p><a href="#">我的申诉</a></p>
         </div>
     </nav>
-     <div class="flow" scroll="no">
+     <div class="flow">
         <h2>个人状态</h2>
         <hr/>
        <div class="own1">
         <div>
            <a href="#">提交入党申请书</a>
         </div>
-         <img src="img3/已完成.png">
+         <img src="img3/finish.png">
        </div>
         <div class="own2">
-            <img src="img3/1.png" />
+            <img src="img3/own1.png" />
         </div>
-         <div style="overflow: scroll;min-width: 850px"  viewport="1">
+         <div>
          <div class="own3">
              <div class="finish">
                 <div>
                  <a href="">网上申请人党校学习</a>
                 </div>
-                <img src="img3/已完成.png">
+                <img src="img3/finish.png">
              </div>
-             <img src="img3/2.png" class="Own3img" />
+             <img src="img3/own2.png" class="Own3img" />
              <div class="ready">
                  <div>
                      <a href="">结业考试</a>
                  </div>
-                 <img src="img3/正在进行.png">
+                 <img src="img3/now.png">
              </div>
-             <img src="img3/2.png" class="Own3img"/>
+             <img src="img3/own2.png" class="Own3img"/>
              <div class="ready">
                   <div>
                       <a href="">院级积极分子党校学习</a>
                   </div>
-                 <img src="img3/正在进行.png">
+                 <img src="img3/now.png">
              </div>
-             <img src="img3/8.png" class="Own3img" />
+             <img src="img3/own8.png" class="Own3img" />
          </div>
          <div class="own3">
             <div class="finish">
                 <div>
                       <a href="">递交第一季度思想汇报</a>
                 </div>
-                <img src="img3/已完成.png">
+                <img src="img3/finish.png">
             </div>
-             <img src="img3/2.png" class="Own3img"/>
+             <img src="img3/own2.png" class="Own3img"/>
              <div class="finish">
                 <div>
                    <a>递交第二季度思想汇报</a>
                 </div>
-                 <img src="img3/已完成.png">
+                 <img src="img3/finish.png">
              </div>
-             <img src="img3/2.png" class="Own3img" />
+             <img src="img3/own2.png" class="Own3img" />
              <div class="finish">
                  <div>
                     <a href="">递交第三季度思想汇报</a>
                  </div>
-                 <img src="img3/已完成.png">
+                 <img src="img3/finish.png">
              </div>
-             <img src="img3/2.png" class="Own3img"/>
+             <img src="img3/own2.png" class="Own3img"/>
              <div class="ready">
                  <div>
                  <a href="">递交第四季度思想汇报</a>
                  </div>
-                 <img src="img3/正在进行.png">
+                 <img src="img3/now.png">
              </div>
          </div>
          <div class="own4">
@@ -407,7 +425,7 @@
                 <div>
                    <a href="">参加申请人学习小组</a>
                 </div>
-                 <img src="img3/已完成.png">
+                 <img src="img3/finish.png">
              </div>
              <img src="img3/中字%20上.png"  class="Own4img"/>
 
@@ -415,115 +433,115 @@
                <div>
                  <a href="">被确定为入党积极分子</a>
                </div>
-                 <img src="img3/正在进行.png">
+                 <img src="img3/now.png">
              </div>
-             <img src="img3/5.png" class="Own4img">
+             <img src="img3/own5.png" class="Own4img">
              <div class="ready" style="margin-top: -37px; margin-left: 10px">
                <div>
                  <a href="">团支部推优</a>
                </div>
-                 <img src="img3/正在进行.png">
+                 <img src="img3/now.png">
              </div>
-             <img src="img3/5.png" class="Own4imgR"/>
+             <img src="img3/own5.png" class="Own4imgR"/>
              <img src="img3/中字%20下.png" class="Own4img"/>
          </div>
          </div>
          <div class="own5">
-             <img src="img3/7.png"/>
+             <img src="img3/own7.png"/>
          </div>
          <div class="own6">
              <div>
                  <a href="">经支委会同意，准备近期发展，成为发展对象</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">参加集中培训</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">入党材料准备齐全</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">支部向上级党组织汇报</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">党员发展公示</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">填写入党志愿书</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">召开发展大会，党支部表决</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">党委谈话，审批</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">成为预备党员</a>
              </div>
          </div>
          <div class="own7">
-             <img src="img3/1.png">
+             <img src="img3/own1.png">
          </div>
 
          <div class="own8">
-             <img src="img3/8.png" style="margin-top: -3px"/>
+             <img src="img3/own8.png" style="margin-top: -3px"/>
              <div>
                  <a href="">完成预备党员党校学习</a>
              </div>
-             <img src="img3/8.png"/>
+             <img src="img3/own8.png"/>
          </div>
          <div class="own11">
              <div>
                  <a href="">递交第一季度个人小结</a>
              </div>
-             <img src="img3/2.png" class="Own11img"/>
+             <img src="img3/own2.png" class="Own11img"/>
              <div>
                  <a href="">递交第二季度个人小结</a>
              </div>
-             <img src="img3/2.png" class="Own11img"/>
+             <img src="img3/own2.png" class="Own11img"/>
              <div>
                  <a href="">递交第三季度个人小结</a>
              </div>
-             <img src="img3/2.png" class="Own11img"/>
+             <img src="img3/own2.png" class="Own11img"/>
              <div>
                  <a href="">递交第四季度个人小结</a>
              </div>
          </div>
          <div class="own10">
-             <img src="img3/8.png" style="margin-top: -3px"/>
+             <img src="img3/own8.png" style="margin-top: -3px"/>
              <div>
                  <a href="">按时参加党支部组织生活及党内活动</a>
              </div>
-             <img src="img3/8.png"/>
+             <img src="img3/own8.png"/>
          </div>
 
          <div class="own9">
-             <img  src="img3/7.png"/>
+             <img  src="img3/own7.png"/>
          </div>
          <div class="own6">
              <div>
                  <a href="">递交转正申请</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">党员转正公示</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">党支部召开转正大会，表决通过</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">党委审批</a>
              </div>
-             <img src="img3/2.png" />
+             <img src="img3/own2.png" />
              <div>
                  <a href="">成为中共正式党员</a>
              </div>
@@ -533,7 +551,7 @@
 <div class="respond">
     <div>
         <a href="#" class="enable">
-            <img src="img3/菜单图标.png" />
+            <img src="img3/menu.png" />
         </a>
     </div>
     <div class="child-list">

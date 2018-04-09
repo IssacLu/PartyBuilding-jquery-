@@ -7,6 +7,10 @@ html,body{
 ul li{
     list-style: none;
 }
+.landImg{
+    width: 17px;
+    height: 17px;
+}
 .header{
     height: 40px;
     color: white;
@@ -112,7 +116,7 @@ nav li ul.sub-menu{
 .child-list{
     display: none;
 }
-@media screen and (max-width: 1220px){
+@media screen and (max-width: 1100px){
   .list{
      display: none;
   }
@@ -138,7 +142,8 @@ nav li ul.sub-menu{
     .child-list{
         display: none;
         position: absolute;
-        width: 150px;
+        width: 170px;
+        margin-top: -2px;
     }
     .child-list p{
         width: 100%;
