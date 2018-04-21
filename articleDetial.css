@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+
+}
+body{
+    margin-top: -7px;
+}
+.detialTotal{
+    width: 62.5%; 
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -90px;
+  width: 79%;
+  margin-left: 200px;
+  background: white;
+  text-indent:30px;
+}
+.wrapper p{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.foot{
+    height: 90px;
+    width: 100%;
+    background: #c60001;
+    margin-top: 140px;
+    bottom: -70px;
+}
+.push {
+  height: 50px;
+}

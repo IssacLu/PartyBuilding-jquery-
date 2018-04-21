@@ -3,6 +3,7 @@ html,body{
     padding: 0;
     background: rgba(241,237,238,1);
     margin-top: -7px;
+    height: 100%;
 }
 ul li{
     list-style: none;

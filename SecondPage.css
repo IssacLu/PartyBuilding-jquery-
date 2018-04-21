@@ -6,8 +6,7 @@ body{
     background: rgba(252,250,251,1);
     width: 20%;
     float: left;
-    min-height: 800px;
-    height: auto !important;
+    min-height: 300px;
 }
 .find ul{
     padding: 0;
@@ -20,7 +19,7 @@ body{
 }
 .find p{
     text-align: center;
-    margin: 5px 0;
+    margin:0;
     height: 30px;
     line-height: 30px;
 }
@@ -39,7 +38,6 @@ body{
     background: rgba(252,250,251,1) ;
     float: right;
     min-height: 800px;
-    height: auto !important;
 }
 .info div{
     width: 100%;
@@ -59,11 +57,16 @@ body{
 .total{
     width: 62.5%;
     min-height: 800px;
-    height: auto !important;
     position: relative;
     margin: 0 auto;
+    margin-bottom: -90px;
     margin-top: 10px;
 }
+.total:after{
+    content: "";
+    display: block;
+}
+
 h2{
     color:  #c60001;
     text-align: center;
@@ -76,7 +79,8 @@ hr{
     margin-top: 0;
 }
 .foot{
-    margin-top: 50px;
+    margin-top: 90px;
+    bottom:-70px;
 }
 a{
     color: black;
