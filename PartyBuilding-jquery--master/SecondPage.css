@@ -1,0 +1,123 @@
+body{
+    background: rgba(241,237,238,1);
+    font-size: 14px;
+}
+.find{
+    background: rgba(252,250,251,1);
+    width: 20%;
+    float: left;
+    min-height: 300px;
+}
+.find ul{
+    padding: 0;
+    margin: 5px 0;
+    display: none;
+}
+.find li{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.find p{
+    text-align: center;
+    margin:0;
+    height: 30px;
+    line-height: 30px;
+}
+.active{
+    width: 100%;
+    height: 40px;
+    background:  #c60001;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.info{
+    width: 79%;
+    background: rgba(252,250,251,1) ;
+    float: right;
+    min-height: 800px;
+}
+.info div{
+    width: 100%;
+    height:100px;
+}
+.info h1{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.info p{
+    font-size: 9px;
+    margin-left: 20px;
+    color: gray;
+    margin-right: 20px;
+}
+.total{
+    width: 62.5%;
+    min-height: 800px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: -90px;
+    margin-top: 10px;
+}
+.total:after{
+    content: "";
+    display: block;
+}
+
+h2{
+    color:  #c60001;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+hr{
+    border-top: 1px solid  #c60001;
+    width: 80px;
+    margin-top: 0;
+}
+.foot{
+    margin-top: 90px;
+    bottom:-70px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .info p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1050px){
+    .find{
+        display: none;
+    }
+    .respond {
+        display: block;
+        position: absolute;
+        top: 40px;
+    }
+    .info{
+        width: 100%;
+    }
+    .enable{
+        margin-top: -28px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .respond {
+        display: block;
+        position: absolute;
+        top: 40px;
+    }
+    .total{
+        width: 70%;
+    }
+}
