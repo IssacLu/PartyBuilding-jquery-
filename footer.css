@@ -1,0 +1,33 @@
+.changePage{
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+}
+.changePage a{
+    text-decoration:none ;
+    width: 7%;
+    height: 25px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 20px;
+}
+.start{
+    background: #c60001;
+    color: white;
+}
+.after{
+    color:#c60001 ;
+    background: white;
+}
+@media screen and (max-width:980px){
+    .changePage a{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:650px){
+    .changePage {
+        width: 85%;
+        margin-top: 20px;
+    }
+}

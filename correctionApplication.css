@@ -1,0 +1,24 @@
+.information p{
+    height:30px;
+    width: 94%;
+    font-size: 14px;
+    background: rgba(241,237,238,1);
+    line-height: 30px;
+}
+.information b{
+    color: rgba(189,0,1,1);
+    margin-left: 30px;
+}
+.information span{
+    color: black;
+}
+table{
+    border-collapse: collapse;
+    width: 85%;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+.even{
+    background: rgba(252,250,251,1);
+}
